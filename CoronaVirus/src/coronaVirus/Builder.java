@@ -33,8 +33,8 @@ public class Builder implements ContextBuilder<Object> {
 		int InfectedHumanCount = params.getInteger("infected_human_count");
 		int spaceSizeX = params.getInteger("space_x");
 		int spaceSizeY = params.getInteger("space_y");
-		
-		
+		boolean addInfectedHuman = params.getBoolean("add_infected_human");
+		int periodTick = params.getInteger("period_tick");
 		
 		ContinuousSpaceFactory spaceFactory =
 		ContinuousSpaceFactoryFinder . createContinuousSpaceFactory ( null );
@@ -62,6 +62,8 @@ public class Builder implements ContextBuilder<Object> {
 			NdPoint pt = space . getLocation ( obj );
 			grid . moveTo ( obj , ( int ) pt . getX () , ( int ) pt . getY ());
 			}
+		
+		if(addInfectedHuman)context.add(new EnvController(periodTick,space,grid,neighborDistanceToBeInfected));
 		
 	return context;
 	}

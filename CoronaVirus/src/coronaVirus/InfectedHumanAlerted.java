@@ -34,11 +34,11 @@ public class InfectedHumanAlerted {
 		if (tick > 30 ) {
 			luck = new Random().nextDouble()*100;
 		{
-			if(age<17) {if(luck>0.2) makeMeCured(); else makeMeDead();}
-			else if(age<29) {if(luck>2) makeMeCured(); else makeMeDead();}
-			else if(age<39) {if(luck>7) makeMeCured(); else makeMeDead();}
-			else if(age<49) {if(luck>12) makeMeCured(); else makeMeDead();}
-			else {if(luck>19) makeMeCured(); else makeMeDead();}
+			if(age<17) {if(luck>0.1) makeMeCured(); else makeMeDead();}
+			else if(age<29) {if(luck>0.7) makeMeCured(); else makeMeDead();}
+			else if(age<39) {if(luck>2.9) makeMeCured(); else makeMeDead();}
+			else if(age<49) {if(luck>7.4) makeMeCured(); else makeMeDead();}
+			else {if(luck>15.3) makeMeCured(); else makeMeDead();}
 			
 		}}
 	}
