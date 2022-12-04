@@ -5,6 +5,11 @@
 						isReadOnly="false" 
 						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
 											/>
+				<parameter name="space_y" displayName="Environment Size Y" type="int" 
+						defaultValue="50" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
+											/>
 				<parameter name="human_count" displayName="Human Count" type="int" 
 						defaultValue="100" 
 						isReadOnly="false" 
@@ -17,6 +22,16 @@
 											/>
 				<parameter name="infected_human_count" displayName="Infected Human Count" type="int" 
 						defaultValue="1" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
+											/>
+				<parameter name="add_infected_human" displayName="Add an infected human to the environment in each period" type="boolean" 
+						defaultValue="false" 
+						isReadOnly="false" 
+						converter="repast.simphony.parameter.StringConverterFactory$BooleanConverter"
+											/>
+				<parameter name="period_tick" displayName="Period Ticks" type="int" 
+						defaultValue="300" 
 						isReadOnly="false" 
 						converter="repast.simphony.parameter.StringConverterFactory$IntConverter"
 											/>
